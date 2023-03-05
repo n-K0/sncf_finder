@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Page d'accueil{%endblock%}
+{% block body %}
+<script type="text/javascript">
+    function loading() {
+        document.getElementById("content").style.display = 'none';
+        document.getElementById("loading").style.display = 'block';
+        
+        document.body.style.background = '#081829';
+
+
+    }
+</script>
+
+<h1 class="bigtitle"style="    color: #fff;
+font-family: 'Righteous';
+font-size: 65px;
+font-weight: normal;
+line-height: 60px;
+margin: 10px 0 20px;
+text-transform: uppercase;
+text-shadow: 2px 2px 0 #000, margin: 10px 0 24px;
+text-align: center;">SNCF FINDER</h1>
+
+<div id="loading">
+    <img src="static/css/giphy.gif" width="600" height="400" alt="This will display an animated GIF">
+</div>
+
+<div id="content">
+    <form method="post">
+        <label for="field1">Adresse :</label><br>
+        <input type="text" id="field1" name="field1" required><br>
+        <label for="field2">Durée max :</label><br>
+        <input type="time" id="field2" name="field2" min="00:10" max="24:00" required>
+        <!-- <input type="text" id="field2" name="field2"><br><br> -->
+        <br><br>
+        <div class="buttons">
+            <input type="submit" name='button-role' value="Trajets" onclick="loading();">
+            <input type="submit" name='button-role' value="Random" onclick="loading();">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

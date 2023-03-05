@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Choix Aléatoire{%endblock%}
+{% block body %}
+
+
+<h1>SNCF MAP - Trajet Aléatoire</h1>
+<form method="post" class="form_result">
+    <div class="result_buttons">
+        <input type="submit" name='button-role' value="Home">
+    </div>
+</form>
+
+<div class="included-content-container">
+    <div class="included-content">
+        <h1>Destination : {{ selected_gare[0][1] }}</h1>
+        <h1>Durée : {{ duree_voyage }} heures</h1>
+        <h1>Départ : {{ date_depart }} heures</h1>
+
+    </div>
+</div>
+{% endblock %}

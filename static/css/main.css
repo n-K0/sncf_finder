@@ -1,0 +1,93 @@
+.included-content {
+    border: 1px solid black;
+    width: 800px;
+    height: 800px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.included-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ######################################## */
+body {
+    background: linear-gradient(to bottom, #00bfff 0%, #006699 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type="time"] {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #00bfff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-left: 15%;
+}
+
+label {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+
+div#loading {
+    display: none;
+    cursor: wait;
+}
+
+.form_result{
+    background-color: transparent;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.result-buttons{
+    background-color: transparent;
+    border: dashed red;
+}

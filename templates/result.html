@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Carte des Trajets{%endblock%}
+{% block body %}
+
+
+<h1>SNCF MAP - Trajet pour une durée de : {{time_distance}} heures.</h1>
+<!-- <form action="{{ url_for('index') }}" class="inline">
+    <button class="float-left submit-button">Home</button>
+</form> -->
+<form method="post" class="form_result">
+    <div class="result_buttons">
+        <input type="submit" name='button-role' value="Home">
+        <input type="submit" name='button-role' value="Random">
+    </div>
+</form>
+
+<div class="included-content-container">
+    <div class="included-content">
+        {% include "france_map.html" %}
+    </div>
+</div>
+
+{% endblock %}
